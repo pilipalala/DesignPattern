@@ -6,10 +6,10 @@ package com.example.admin.myapplication.factory;
  *         TODO
  */
 
-public class NYStyleCheesePizza extends Pizza {
+public class NYStyleCheesePizza extends PizzaOld {
 
     public NYStyleCheesePizza() {
-        name = "NY Style Sauce and Cheese Pizza";
+        name = "NY Style Sauce and Cheese PizzaOld";
         dough = "Thin Crust Dough";
         sauce = "Marinara Sauce";
         toppings.add("Grated Reggiano Cheese");

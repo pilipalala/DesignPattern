@@ -20,7 +20,7 @@ import com.example.admin.myapplication.decorate.ingredient.Whip;
 import com.example.admin.myapplication.duck.Duck;
 import com.example.admin.myapplication.duck.FlyRocketBehavior;
 import com.example.admin.myapplication.duck.MallardDuck;
-import com.example.admin.myapplication.factory.NyPizzaStore;
+import com.example.admin.myapplication.factory.NYPizzaStoreNew;
 import com.example.admin.myapplication.factory.Pizza;
 import com.example.admin.myapplication.factory.PizzaStore;
 import com.example.admin.myapplication.observer.CurrentConditionsDisplays;
@@ -66,9 +66,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initPizza() {
-        PizzaStore pizzaStore = new NyPizzaStore();
-        Pizza pizza = pizzaStore.orderPizza("cheese");
-        System.out.println("Ethan ordered a"+pizza.getName()+"\n");
+//        PizzaStore pizzaStore = new NyPizzaStore();
+//        Pizza pizza = pizzaStore.orderPizza("cheese");
+//        System.out.println("Ethan ordered a"+pizza.getName()+"\n");
+
+        PizzaStore pizzaStore = new NYPizzaStoreNew();
+        Pizza cheese = pizzaStore.orderPizza("cheese");
+        System.out.println("Ethan ordered a "+cheese.getName()+"\n");
     }
 
     private void initCofe() {

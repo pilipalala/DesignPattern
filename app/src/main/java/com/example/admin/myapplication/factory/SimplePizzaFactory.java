@@ -9,8 +9,8 @@ package com.example.admin.myapplication.factory;
 
 public class SimplePizzaFactory {
     //首先，在这个工厂内定义一个createPizza()方法，所有客户用这个方法来实例化对象。
-    public Pizza createPizza(String type) {
-        Pizza pizza = null;
+    public PizzaOld createPizza(String type) {
+        PizzaOld pizza = null;
 
         if ("cheese".equals(type)) {
 

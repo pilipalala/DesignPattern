@@ -6,9 +6,9 @@ package com.example.admin.myapplication.factory;
  *         TODO
  */
 
-public class ChicagoStyleCheesePizza extends Pizza {
+public class ChicagoStyleCheesePizza extends PizzaOld {
     public ChicagoStyleCheesePizza() {
-        name = "Chicago Style Deep Dish Cheese Pizza";
+        name = "Chicago Style Deep Dish Cheese PizzaOld";
         dough = "Extra Thick Crust Dough";
         sauce = "Plum Tomato Sauce";
         toppings.add("Shredded Mozzarella Cheese");
